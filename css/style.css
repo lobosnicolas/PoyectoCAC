@@ -1,0 +1,473 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header__flex {
+    display: flex;
+    background-color: rgb(52, 58, 64);
+    padding: 0% 1%;
+
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+
+    color: rgb(245, 223, 30);
+    font-size: 1.2rem;
+    
+    position: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+
+    z-index: 1;
+}
+
+.logo {
+   flex-basis: 20%;
+}
+
+.img__logo {
+    width: 10%;
+
+}
+
+.cajaNavegador {
+    flex-basis: 66%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin: 0%;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+#Comprar {
+    color: #2da546;
+
+}
+
+
+.imagenMain {
+    width: 100%;
+}
+
+.cajabotones0 {
+    flex-basis: 66%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none
+}
+
+
+#BNavegador {
+    color: rgb(240, 245, 241);
+}
+
+#SNavegador{
+    color: #fcd602;
+}
+/* 
+#BComprar {
+    border: 1px solid #2da546;
+    border-radius: 5px;
+    background-color: #2da546;
+    padding: 0.2%;
+    color: white;
+    font-size: 1.3rem;
+ } */
+
+.MainConteiner {
+ /*   width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url(../assets/images/ba1.jpg);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+
+    width: 100%;
+    height: 850px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.61)) , url(../assets/images/ba1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+
+.BoxConferencia {
+ /*   width: 60%;
+    text-align: right;
+    color: #febe00;
+    text-decoration: none;
+    right: 5%;
+    position: relative; */
+
+    
+    position: relative;
+    top: 40%;
+    right: 3%;
+
+    text-align: right;
+    margin: 0 0 0 58%;
+
+    font-size: 1.4rem;
+}
+
+.botton{
+    position: relative;
+    top: 42%;
+    right: 0%;
+    text-align: right;
+    justify-content: space-between;
+    
+}
+
+
+.botton1 {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 0.6%;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.botton2 {
+    border: 1px solid #2da546;
+    border-radius: 5px;
+    background-color: #2da546;
+    padding: 0.6%;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+
+
+.flexOradores{
+    display: flex;
+    padding: 3% 4% 5%;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.flex-conteiner-Oradores * {
+    padding: 1% 2%;
+}
+
+.caja-titulo {
+    margin: 0;
+    padding: 0% auto 3%;
+    font-size: 2rem;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.caja-Orador-1 {
+    padding: 0;
+    border: 1px solid rgb(182, 182, 182); 
+    border-radius: 2%;
+    width: 30%;
+    height: 100%;
+}
+
+.caja-Orador-1 img {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 2% 0;
+    border-radius: 2%;
+}
+
+.caja-Orador-2 {
+
+    padding: 0;
+    border: 1px solid rgb(182, 182, 182);
+    width: 30%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+.caja-Orador-2 img {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 2% 0;
+    border-radius: 2%;
+}
+
+.caja-Orador-3 {
+
+    padding: 0;
+    border: 1px solid rgb(182, 182, 182);
+    width: 30%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+.caja-Orador-3 img {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 2% 0;
+    border-radius: 2%;
+}
+
+.titulo {
+    color: rgb(29, 29, 29);
+}
+
+.parrafo {
+    color: rgb(41, 41, 41);
+}
+
+.etiquetas {
+
+    border-radius: 5px;
+    padding: 0.9%;
+    margin: 0 0 0 2%;
+    color: rgb(43, 43, 43);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #febe00;
+}
+
+#e_react {
+    background-color: #1da1b7;
+    color: white;
+}
+
+#e_negocios {
+    background-color: #929292;
+    color: white;
+}
+
+#e_startups {
+    background-color: #ff4765;
+    color: white;
+}
+
+.linkVerMas {
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#linkLetra {
+    color: #0019fa;
+}
+
+
+.Octubre{
+    display: flex;
+}
+
+.Imagen{
+    width: 50%;
+}
+.Texto{
+    width: 50%;
+    background-color: rgb(48, 53, 56);
+    padding: 1% 3% 0 1%;
+
+    color: white;
+    font-size: 1.1rem;
+    
+}
+.Inscripcion{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2% 0;
+    color: #202020;
+    justify-content: space-between;
+}
+.paraInputs{
+    width: 44%;
+    margin: 1%;
+    height: 30px;
+    border: 1px #acacac solid;
+    border-radius: 3px;
+}
+.paraInputs::placeholder{
+    font-size: 1rem;
+    padding: 10px;
+}
+.Inscripcion button{
+    height: 40px;
+    width: 90%;
+    margin: 1% 0;
+}
+.Tamaño{
+    height: 100px;
+    width: 90%;
+}
+.Tabla{
+    border: 3px #2da546;
+    border-style: solid;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 2;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+
+.Inscripcion{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2% 0;
+
+    color:#222222;
+}
+/*
+.Footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background: linear-gradient(90deg,#1f3540,#235471);
+}
+
+.caja3{
+    flex-basis: 66%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#navFooter {
+    margin: 0 auto;
+}
+#navFooter li a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+}*/
+
+.colorFooter{
+    background: linear-gradient(90deg,#1f3540,#235471);
+}
+
+@media screen and (max-width: 500px) {
+    .header__flex{
+        flex-direction: column;
+        position: static
+    }
+
+    .img__logo{
+        width: 40%;
+    }
+    .cajaNavegador{
+        margin: 10% 0;
+        display: block;
+        text-align: center;
+    }
+
+
+    .MainConteiner {
+        justify-content: center;
+    }
+
+    .Parrafo {
+        line-height: 1.5rem;
+    }
+
+    .BoxConferencia {
+        width: 80%;
+        text-align: center;
+        backdrop-filter: blur(5px);
+        margin: 0 auto;
+        
+      /*  padding: 10%;
+        margin: 0;
+        text-align: justify;
+        position: static;
+        top: 0; right: 0;
+        font-size: 1.1rem;
+        backdrop-filter: blur(5px); */
+
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+    } 
+    .botton {
+        position: static;
+        top: 0; right: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .flexOradores{
+        height: auto;
+        display: block;
+    }
+    .parrafo{
+        width: auto;
+        margin: 5% 0;
+    }
+   
+    .caja-Orador-1{
+        width: auto;
+        margin: 5% 0;
+    }
+
+    .caja-Orador-2{
+        width: auto;
+        margin: 5% 0;
+    }
+    .caja-Orador-3{
+        width: auto;
+        margin: 5% 0;
+    }
+
+    .Octubre{
+        flex-direction: column;
+        padding: auto;
+    }
+    .Imagen{
+        width: 100%;
+        border: none;
+    }
+    .Texto{
+        width: 100%;
+        border: none;
+        padding: 3%;
+    }
+
+     .Inscripcion{
+        width: 97%;
+    }
+
+     .Footer{
+        height: auto;
+        padding: 3%;
+        flex-direction: column;
+        position: static
+    }
+
+}
