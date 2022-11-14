@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comprartickets</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header__flex">
+        <img class="img__logo" src="../assets/images/codoacodo.png" alt="" loading="lazy">
+
+        <div class="logo">
+            <a href="../index.html" id="SNavegador">
+                <h1>Conf.Bs.As.</h1>
+            </a>
+        </div>
+         
+        <ul class="cajaNavegador">
+            <li></li> <a class="link" href="#" id="BNavegador">La Conferencia </a> </li>
+            <li></li> <a class="link" href="#Oradores" id="BNavegador">Los oradores</a></li>
+            <li></li> <a class="link" href="#lugaryfecha" id="BNavegador">El lugar y la Fecha</a></li>
+            <li></li> <a class="link" href="#formulario" id="BNavegador">Conviértete en Orador</a></li>
+            <li></li> <a class="link" href="./pages/comprartickets.html" id="Comprar">Comprar Tickets</a></li>
+        </ul>
+
+    </header>
+
+
+
+    <!--SECCION TARJETAS TICKETS-->
+
+
+    <main class="cajaDescuento">
+        <section class="descuentos">
+
+            <div class="descuentoEst">
+                <div class="tituloEst">
+                    <h1>Estudiante</h1>
+                </div>
+                <p>Tienen un descuento</p>
+                <br>
+                <h3>80%</h3>
+                <br>
+                <p>*presentar documentacion</p>
+
+            </div>
+            </div>
+
+            <div class="descuentoTr">
+                <div class="tituloTr">
+                    <h1>Trainee</h1>
+                    <br>
+                </div>
+                <p>Tienen un descuento</p>
+                <br>
+                <h3>50%</h3>
+                <br>
+
+                <span>*presentar documentacion</span>
+
+            </div>
+            </div>
+
+            <div class="descuentoJr">
+                <div class="tituloJr">
+                    <h1>Junior</h1>
+                    <br>
+                </div>
+                <p>Tienen un descuento</p>
+                <br>
+                <h3>15%</h3>
+                <br>
+                <span>*presentar documentacion</span>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="cajaCompras">
+        <section class="comprass">
+
+            <div class="cajaTitulo">
+                <p>VENTA
+                <p>
+                <h1> Valor del Tickets $200</h1>
+                <br>
+            </div>
+
+            <div class="boxInscripcion">
+                <div class="izqInputs">
+                    <div class="mb-3">
+                        <label for="nombreFormControlInput1" class="form-label"></label>
+                        <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1"
+                            placeholder="Nombre">
+                    </div>
+
+                </div>
+                <div class="derInputs">
+                    <div class="mb-3">
+                        <label for="" class="form-label"></label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Apellido">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cajaCorreo">
+                <div>
+                    <div class="mb-3">
+                        <label for="" class="form-label"></label>
+                        <input type="email" class="form-control form-control-lg" placeholder="Correo">
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="boxInscripcion">
+                <div class="numTickets">
+                    <h4> Cantidad</h4>
+                </div>
+                <div class="catTickets">
+                    <h4>Categoria</h4>
+                </div>
+            </div>
+
+            <div class="boxInscripcion">
+                <div class="izqInputs">
+                    <div class="mb-3">
+                        <label for="cantidadFormControlInput1" class="form-label"></label>
+                        <input type="number" class="form-control form-control-lg" id="cantidadTickets"
+                            placeholder="Cantidad">
+                    </div>
+                </div>
+                <div class="derInputs">
+                    <div class="mb-3">
+                        <label for="" class="form-label"></label>
+                        <input class="form-control form-control-lg" list="datalistOptions" id="categoriaSelec"
+                            placeholder="Categoria">
+                        <datalist id="datalistOptions">
+                            <option value="Trainee"></option>
+                            <option value="Junior"></option>
+                            <option value="Estudiante"></option>
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="cajaTotal">
+                <div class="alert alert-primary mt-2 mb-4 anchoCorreo" role="alert">
+                    Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+                </div>
+            </div>
+    
+             <br>
+            <div class="boxInscripcionButton">
+
+                 <button class="buttonBorrar" id="btnBorrar">Borrar</button>
+
+                <button class="buttonResumen" id= "btnResumen">Resumen</button>
+            </div> 
+
+        </section>
+    </div>
+
+    <!--SECCION FOOTER-->
+
+    <footer class="colorFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Preguntas Frecuentes</a>
+                </div>
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Contactanós</a></div>
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Prensa</a></div>
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Conferencias</a></div>
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Terminos y Condiciones</a>
+                </div>
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Privacidad</a></div>
+                <div class="col pt-4 pb-4"><a class="text-white text-decoration-none" href="">Estudiantes</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>  
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

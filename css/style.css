@@ -1,5 +1,5 @@
-
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,24 +9,21 @@
 .header__flex {
     display: flex;
     background-color: rgb(52, 58, 64);
-    padding: 0% 1%;
+    margin: auto;
 
-    position: fixed;
     justify-content: space-between;
     align-items: center;
 
-    color: rgb(245, 223, 30);
+    position: sticky;
+    top: 0px;
     font-size: 1.2rem;
-    
-    position: fixed;
     font-family: Helvetica, Arial, sans-serif;
     width: 100%;
-
     z-index: 1;
 }
 
 .logo {
-   flex-basis: 20%;
+    flex-basis: 20%;
 }
 
 .img__logo {
@@ -42,21 +39,27 @@
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin: 0%;
+    margin-right: 3%;
     padding: 0;
     font-size: 1.2rem;
 }
 
-.link {
-    text-decoration: none;
+.link{
+
     color: white;
     font-size: 1rem;
     text-decoration: none;
+
 }
 
-#Comprar {
+
+
+
+#Comprar:hover {
+    position: relative;
     color: #2da546;
 
+    transition: 1s;
 }
 
 
@@ -76,21 +79,12 @@
     color: rgb(240, 245, 241);
 }
 
-#SNavegador{
+#SNavegador {
     color: #fcd602;
 }
-/* 
-#BComprar {
-    border: 1px solid #2da546;
-    border-radius: 5px;
-    background-color: #2da546;
-    padding: 0.2%;
-    color: white;
-    font-size: 1.3rem;
- } */
 
 .MainConteiner {
- /*   width: 100%;
+    /*   width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url(../assets/images/ba1.jpg);
     color: white;
@@ -99,23 +93,16 @@
     align-items: center; */
 
     width: 100%;
-    height: 850px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.61)) , url(../assets/images/ba1.jpg);
+    height: 800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url(../assets/images/ba1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    
+    margin: 0 auto;
 }
 
 .BoxConferencia {
- /*   width: 60%;
-    text-align: right;
-    color: #febe00;
-    text-decoration: none;
-    right: 5%;
-    position: relative; */
 
-    
     position: relative;
     top: 40%;
     right: 3%;
@@ -126,13 +113,13 @@
     font-size: 1.4rem;
 }
 
-.botton{
+.botton {
     position: relative;
     top: 42%;
     right: 0%;
     text-align: right;
     justify-content: space-between;
-    
+
 }
 
 
@@ -159,7 +146,7 @@
 
 
 
-.flexOradores{
+.flexOradores {
     display: flex;
     padding: 3% 4% 5%;
 
@@ -171,12 +158,13 @@
     margin: 0 auto;
 }
 
+/*
 .flex-conteiner-Oradores * {
     padding: 1% 2%;
 }
-
+*/
 .caja-titulo {
-    margin: 0;
+    margin: auto;
     padding: 0% auto 3%;
     font-size: 2rem;
     text-align: center;
@@ -185,7 +173,7 @@
 
 .caja-Orador-1 {
     padding: 0;
-    border: 1px solid rgb(182, 182, 182); 
+    border: 1px solid rgb(182, 182, 182);
     border-radius: 2%;
     width: 30%;
     height: 100%;
@@ -277,51 +265,58 @@
 }
 
 
-.Octubre{
+.Octubre {
     display: flex;
 }
 
-.Imagen{
+.Imagen {
     width: 50%;
 }
-.Texto{
+
+.Texto {
     width: 50%;
     background-color: rgb(48, 53, 56);
     padding: 1% 3% 0 1%;
 
     color: white;
     font-size: 1.1rem;
-    
+
 }
-.Inscripcion{
+
+.Inscripcion {
     text-align: center;
     width: 50%;
     margin: 0 auto;
     padding: 2% 0;
-    color: #202020;
+    color: #fcd602;
     justify-content: space-between;
 }
-.paraInputs{
+
+.paraInputs {
     width: 44%;
     margin: 1%;
     height: 30px;
     border: 1px #acacac solid;
     border-radius: 3px;
 }
-.paraInputs::placeholder{
+
+.paraInputs::placeholder {
     font-size: 1rem;
     padding: 10px;
 }
-.Inscripcion button{
+
+.Inscripcion button {
     height: 40px;
     width: 90%;
     margin: 1% 0;
 }
-.Tamaño{
+
+.Tamaño {
     height: 100px;
     width: 90%;
 }
-.Tabla{
+
+.Tabla {
     border: 3px #2da546;
     border-style: solid;
     border-radius: 5px;
@@ -334,53 +329,280 @@
 }
 
 
-.Inscripcion{
+.Inscripcion {
     text-align: center;
     width: 50%;
     margin: 0 auto;
     padding: 2% 0;
 
-    color:#222222;
+    color: #d32525;
 }
-/*
-.Footer{
+
+.colorFooter {
+    background: linear-gradient(90deg, #1f3540, #235471);
+}
+
+/*COMPRA DE TICKETS*/
+
+.cajaDescuento {
+
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background: linear-gradient(90deg, #fcfa87, #f3ff48);
+
+}
+
+.descuentos {
+    display: flex;
+    width: 130vh;
+    height: 50vh;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+
+}
+
+.descuentoEst {
+    border: 2px solid #0019fa;
+    height: 40vh;
+    width: 40vh;
+    text-align: center;
+
+}
+
+.descuentoTr {
+    border: 2px solid #03a6d8;
+    height: 40vh;
+    width: 40vh;
+    text-align: center;
+}
+
+.descuentoJr {
+    border: 2px solid #faa200;
+    height: 40vh;
+    width: 40vh;
+    text-align: center;
+}
+
+
+.tituloEst {
+    display: flex;
+    justify-content: center;
+
+    height: 10vh;
+    width: 100%;
+    background-color: #0019fa;
+
+    font-family: sans-serif;
+}
+
+.tituloTr {
+    display: flex;
+    justify-content: center;
+
+    height: 10vh;
+    width: 100%;
+    background-color: #03a6d8;
+
+    font-family: sans-serif;
+}
+
+.tituloJr {
+    display: flex;
+    justify-content: center;
+
+    height: 10vh;
+    width: 100%;
+    background-color: #faa200;
+
+    font-family: sans-serif;
+}
+
+/* FORMULARIO */
+
+.cajaCompras {
+    display: flex;
+    width: 100%;
+    height: 130vh;
+
+
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(90deg, #fcfa87, #f3ff48)
+}
+
+.comprass {
+
+    width: 130vh;
+    height: 100%;
+
+
+
+}
+
+.cajaTitulo {
+    text-align: center;
+
+    height: 20vh;
+    width: 130vh;
+
+
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+
+
+.boxInscripcion {
+    display: flex;
+
+    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 130vh;
+    height: 60px;
+    margin-top: 5vh;
+
+
+}
+
+.izqInputs {
+    justify-content: flex-start;
+
+
+    width: 50%;
+    border-radius: 30px;
+
+}
+
+.derInputs {
+    justify-content: flex-end;
+
+    width: 50%;
+    border-radius: 25px;
+
+}
+
+.cajaCorreo {
+    justify-content: space-evenly;
+
+    width: 130vh;
+    height: 60 px;
+    margin-top: 5vh;
+
+
+}
+
+.boxInscripcion {
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+    margin-top: 5vh;
+
+
+}
+
+.numTickets {
+    justify-content: flex-end;
+    text-align: start;
+
+    width: 48%;
+    height: 25px;
+
+}
+
+.catTickets {
+    align-items: flex-start;
+    text-align: start;
+
+    width: 48%;
+    height: 25px;
+}
+
+
+.cajaTotal {
+    display:block;
+    justify-content: space-evenly;
+    text-align: start;
+    width: 100%;
+    border-radius: 3px;
+
+
+}
+
+
+.textoPagar {
     display: flex;
     align-items: center;
-    height: 100px;
-    background: linear-gradient(90deg,#1f3540,#235471);
-}
+    justify-content:space-evenly;
 
-.caja3{
-    flex-basis: 66%;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-}
-
-#navFooter {
-    margin: 0 auto;
-}
-#navFooter li a{
     font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-    justify-content: space-between;
-}*/
+    color: black;
+    margin-left: 2vh;
 
-.colorFooter{
-    background: linear-gradient(90deg,#1f3540,#235471);
 }
 
-@media screen and (max-width: 500px) {
-    .header__flex{
+.boxInscripcionButton {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 130vh;
+    height: 40px;
+}
+
+.buttonBorrar {
+    width: 50%;
+    height: 40px;
+
+    border: 1px solid #2da546;
+    border-radius: 5px;
+    background-color: #2da546;
+    padding: 0.6%;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.buttonResumen {
+    justify-content: space-between;
+    width: 50%;
+    height: 40px;
+
+    border: 1px solid #2da546;
+    border-radius: 5px;
+    background-color: #2da546;
+    padding: 0.6%;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+
+
+
+/*Media*/
+
+@media screen and (max-width: 700px) {
+    .header__flex {
         flex-direction: column;
         position: static
     }
 
-    .img__logo{
+    .img__logo {
         width: 40%;
     }
-    .cajaNavegador{
+
+    .cajaNavegador {
         margin: 10% 0;
         display: block;
         text-align: center;
@@ -396,74 +618,83 @@
     }
 
     .BoxConferencia {
-        width: 80%;
+        width: 100%;
         text-align: center;
         backdrop-filter: blur(5px);
         margin: 0 auto;
-        
-      /*  padding: 10%;
-        margin: 0;
-        text-align: justify;
-        position: static;
-        top: 0; right: 0;
-        font-size: 1.1rem;
-        backdrop-filter: blur(5px); */
 
     }
 
     h1 {
         font-size: 2rem;
         margin-bottom: 0.6rem;
-    } 
+    }
+
     .botton {
         position: static;
-        top: 0; right: 0;
+        top: 0;
+        right: 0;
         text-align: center;
         margin: 0 auto;
     }
 
-    .flexOradores{
+    .flexOradores {
         height: auto;
         display: block;
     }
-    .parrafo{
-        width: auto;
-        margin: 5% 0;
-    }
-   
-    .caja-Orador-1{
+
+    .parrafo {
         width: auto;
         margin: 5% 0;
     }
 
-    .caja-Orador-2{
-        width: auto;
-        margin: 5% 0;
-    }
-    .caja-Orador-3{
+    .caja-Orador-1 {
         width: auto;
         margin: 5% 0;
     }
 
-    .Octubre{
+    .caja-Orador-2 {
+        width: auto;
+        margin: 5% 0;
+    }
+
+    .caja-Orador-3 {
+        width: auto;
+        margin: 5% 0;
+    }
+
+    .Octubre {
         flex-direction: column;
         padding: auto;
     }
-    .Imagen{
+
+    .Imagen {
         width: 100%;
         border: none;
     }
-    .Texto{
+
+    .Texto {
         width: 100%;
         border: none;
         padding: 3%;
     }
 
-     .Inscripcion{
+    .Inscripcion {
         width: 97%;
     }
 
-     .Footer{
+    .descuentos{
+
+        height: 200vh;
+
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+
+        background-color: #0019fa;
+    }
+
+    .Footer {
         height: auto;
         padding: 3%;
         flex-direction: column;
